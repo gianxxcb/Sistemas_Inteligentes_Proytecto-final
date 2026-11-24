@@ -1,0 +1,21 @@
+{
+  "source": "integrated_20261122T171326074713",
+  "eligible": {
+    "trades": 98,
+    "final": 9362.286519723491,
+    "liquidations": 0,
+    "missing_funding": 0,
+    "admission_breaches": 0,
+    "max_margin": 1166.6666666666665,
+    "max_drawdown": 0.07803859974856053
+  },
+  "signal": {
+    "trades": 117,
+    "final": 9266.97595442545,
+    "liquidations": 0,
+    "missing_funding": 0,
+    "admission_breaches": 0,
+    "max_margin": 2816.1005189246025,
+    "max_drawdown": 0.0888740795181927
+  }
+}

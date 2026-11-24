@@ -1,0 +1,55 @@
+{
+  "edition": "V3",
+  "period": [
+    "2025-01-01",
+    "2026-01-01"
+  ],
+  "assets": [
+    "AVAXUSDT",
+    "BTCUSDT",
+    "ETCUSDT",
+    "NEARUSDT",
+    "NEOUSDT"
+  ],
+  "previously_inspected": true,
+  "independent_confirmation": false,
+  "deployment": false,
+  "reasons": [
+    "El nivel 0 no supera la referencia incondicional en todos los bloques requeridos.",
+    "Cobertura P10–P90 inferior al 80 % en al menos un estilo.",
+    "Ventaja neta sin confirmación estadística."
+  ],
+  "conclusion": "La política V3 queda descartada para despliegue. El ensayo de 2025 incumplió los criterios de admisión. Los cinco contratos de 2025 ya fueron examinados. Una confirmación independiente requiere otra muestra y el registro previo de una política elegible.",
+  "evidence": {
+    "reports/validation/integrated_20261122T171326074713/report.json": "bd75b6ef732dcf89f2e6d8152d72cfe944c37e63c242b722e52043d3bd522f5f",
+    "reports/validation/integrated_20261122T171326074713/forecasts.parquet": "13c9fde65eb6f10eae7eb5e94d8182e3e0fa3c9e036cfe142a81957ae0f2fca8",
+    "reports/validation/integrated_20261122T171326074713/equity.parquet": "156f6c8ea50a8fee402f06a7b072729370845f32fcb48d8d10adc5250ba084d3",
+    "reports/validation/integrated_20261122T171326074713/trades.parquet": "47b0117cc0749949c56a6362ea40bf84561957c6c0c7c6d8873ed945bf291d01",
+    "reports/validation/integrated_20261122T171326074713/control_equity.parquet": "7b029bad5b3e44d0e263683be7c1999139ff7b1b23f5d5e4d7055048a9934abf",
+    "reports/validation/integrated_20261122T171326074713/control_trades.parquet": "5a466cdca4ada49283134223220619abcbdc1aec6096357433ff5d9582af742e",
+    "reports/validation/margin_20261124T012928162162/report.json": "3375ac93600c42918572e619e73f6d372cfea6e56785160d3ab154dccd8e9d0c",
+    "reports/validation/margin_20261124T012928162162/equity.parquet": "f01fcf2d6df17f92a14282badcf05fbbf23230ba3c9f176f9871512242f281cd",
+    "reports/validation/margin_20261124T012928162162/trades.parquet": "ad5235882fc54108f61f918d78b72d6702b6f0ef04d009cf8a2fbcbbb2edf855",
+    "reports/validation/margin_20261124T012928162162/control_equity.parquet": "c727f1ae698819e1f014c9ab6a7ac8e75ba7b350115fc26fff8d96d5816efe40",
+    "reports/validation/margin_20261124T012928162162/control_trades.parquet": "e427a9b543662048731dd8ec60f2cb4a3e4cea901413650263d306cd77fc7b7c",
+    "config/reserved_assets_v2.json": "c58dd7df6b04594fe022d04ea7383bac941eeaea17e92b1ebae9ad3fc5569aa5",
+    "config/validation_e8_v3.json": "2fdf3614806ffbc79e94fea3621f57ff316c8762ad0cde84fe30549421688533",
+    "reports/validation/e8/summary.json": "c0214686b6e105e148df7e3a4c5f1940b7a385be36129b140f60118938549d89",
+    "reports/validation/e7_orchestration/summary.json": "ac4132c931715dd3b74761008acfab6a4449f10387e7fc097525bf01152529a2",
+    "Reformulacion/v3/17_hipotesis_y_experimentos.md": "1440b1ce11af91a11555b36f2cd4366ba2a8328fecc2728c0ecf8fab55def2da",
+    "reports/validation/e8/models_swing_positional.json": "f623264be4e810cf2c4b2870198e01d0509f863afe94f935be1c8db50bfebb5b",
+    "reports/validation/e8/models_swing_short.json": "4f14ae0a7f54605210d7d7a79716a215d9bd389379ebbefcefd8deb2df8ce42f",
+    "reports/validation/e8/models_tactical.json": "32c8429e65c24eef175a9508b5591a6114eb4d373a46446be49b5df5841bba04",
+    "reports/validation/e8/execution.json": "c133c44ae21a3006ee91dee22ed74aff9eff0d5195e4cdd9957fca0206b3a33f",
+    "reports/validation/e8/h2_swing_positional.parquet": "b033895edff760177d939fd59b8319b6fa6423de29ee36e79071d48f9f9c427f",
+    "reports/validation/e8/h2_swing_short.parquet": "4c87b5d83cce53c5dec8376db99c4de4b3b3fa628a19542e717d4e51d992335a",
+    "reports/validation/e8/h2_tactical.parquet": "8a9733aea3ee4d1431ff3db420b2499d0d395bbcc7abc4934907c38f34565515",
+    "scripts/evaluate_v3_model_hypotheses.py": "db2a4db15dafb6677794b9ce8d97537890d9ca6f6e14e20f1d1c1a309975df44",
+    "scripts/evaluate_v3_execution_hypotheses.py": "3bdaedcbde60d16d09a535024bef399082dffbd51faec86f4a9d1c3ace6a0dc0",
+    "scripts/evaluate_v3_margin.py": "78c13b1cb9582c9e1e69237e9f8be7a232e7a561008743f1c2efb73341907127",
+    "scripts/evaluate_integrated_v3.py": "3d5ad8fdfae91a24a07390346126a8fdca97eaa061d6465bfd9816a77d74ab9b",
+    "src/meta_model/research_v3.py": "0b56b16cc92d0e9c03a3447d1a6d3f075738082f4dc183898fe4c93851b9da91",
+    "src/risk/portfolio_risk_manager.py": "f16249a9bdb5fbe6f6c0fb616cdea4abf4a1128ef264466c5e42159add6613b8",
+    "src/validation/confirmation_v3.py": "b6b078620761569a7738e06f9da6123b9d541e960cc1ffdcf4ff3f0878966c87"
+  }
+}

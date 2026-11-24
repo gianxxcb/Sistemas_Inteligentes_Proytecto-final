@@ -1,0 +1,230 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "title": "¿Se puede predecir el rango mejor que con ATR?",
+      "result": "Cumple en validación",
+      "evidence": "Pliegues con mejora superior al 5 % en táctico, corto y posicional: [4, 4, 4]. Control barajado: [0, 0, 1].",
+      "raw_p": 0.1162109375,
+      "adjusted_p": 0.459
+    },
+    {
+      "id": "H2",
+      "title": "¿El filtro de costes mejora la expectativa?",
+      "result": "Sin mejora demostrada",
+      "evidence": "13,413 planes comparables en F3 y F4. 0 de 3 estilos con límite inferior positivo.",
+      "raw_p": 0.20400000000000001,
+      "adjusted_p": 0.459
+    },
+    {
+      "id": "H3",
+      "title": "¿La GRU supera a XGBoost de forma consistente?",
+      "result": "Ventaja de la GRU en alguna métrica",
+      "evidence": "Pliegues favorables a la GRU en log loss, AUC y P50, por estilo: [[0, 0, 3], [1, 0, 1], [1, 0, 0]].",
+      "raw_p": 0.04833984375,
+      "adjusted_p": 0.43505859375
+    },
+    {
+      "id": "H4",
+      "title": "¿Aportan información la hora y la cercanía al funding?",
+      "result": "Sin mejora demostrada",
+      "evidence": "Importancia media por permutación -0.00015. Diferencias de horario en 2/4 pliegues.",
+      "raw_p": 1.0,
+      "adjusted_p": 1.0
+    },
+    {
+      "id": "H5",
+      "title": "¿El régimen HMM mejora la elección del experto?",
+      "result": "Sin mejora demostrada",
+      "evidence": "0/6 comparaciones superan conjuntamente log loss y expectativa neta.",
+      "raw_p": 1.0,
+      "adjusted_p": 1.0
+    },
+    {
+      "id": "H6",
+      "title": "¿La red supera al promedio o a Hedge?",
+      "result": "Sin superioridad demostrada",
+      "evidence": "Se evaluaron seis políticas por estilo. La abstención limita la comparación económica.",
+      "raw_p": 1.0,
+      "adjusted_p": 1.0
+    },
+    {
+      "id": "H7",
+      "title": "¿CUSUM mejora la unicidad y la predicción?",
+      "result": "Alcanza el umbral en algún estilo",
+      "evidence": "Pliegues con unicidad >0,60 y mayor AUC sobre los mismos cierres: [4, 2, 2].",
+      "raw_p": 1.0,
+      "adjusted_p": 1.0
+    },
+    {
+      "id": "H8",
+      "title": "¿Ayuda la confirmación diaria en swing corto?",
+      "result": "Sin mejora demostrada",
+      "evidence": "IC 80 % de la mejora en R: [-0.007, 0.045] en 46,072 operaciones.",
+      "raw_p": 0.159,
+      "adjusted_p": 0.459
+    },
+    {
+      "id": "H9",
+      "title": "¿Los retornos previos de BTC y ETH ayudan en otras monedas?",
+      "result": "Sin mejora consistente",
+      "evidence": "0/3 estilos superan el umbral conjunto por pliegues y contratos. Se publican AUC y P50 por moneda.",
+      "raw_p": 1.0,
+      "adjusted_p": 1.0
+    }
+  ],
+  "cpcv": [
+    {
+      "style": "tactical",
+      "splits": 28,
+      "paths": 7,
+      "observations": 23859,
+      "policies": {
+        "Uniforme": {
+          "log_loss": 0.5648535568015414,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Hedge": {
+          "log_loss": 0.5648950896595747,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Fixed Share": {
+          "log_loss": 0.5648518532720311,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Solo escenario": {
+          "log_loss": 0.5648535568015414,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Escenario + HMM": {
+          "log_loss": 0.564887206716859,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Red neuronal": {
+          "log_loss": 0.5650118589401245,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        }
+      }
+    },
+    {
+      "style": "swing_short",
+      "splits": 28,
+      "paths": 7,
+      "observations": 7158,
+      "policies": {
+        "Uniforme": {
+          "log_loss": 0.6595053055391866,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Hedge": {
+          "log_loss": 0.6595045784016941,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Fixed Share": {
+          "log_loss": 0.65949758159075,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Solo escenario": {
+          "log_loss": 0.6603922136279005,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Escenario + HMM": {
+          "log_loss": 0.6608503163064564,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Red neuronal": {
+          "log_loss": 0.6577167510986328,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        }
+      }
+    },
+    {
+      "style": "swing_positional",
+      "splits": 28,
+      "paths": 7,
+      "observations": 1060,
+      "policies": {
+        "Uniforme": {
+          "log_loss": 0.7084662994446496,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Hedge": {
+          "log_loss": 0.7087851333414369,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Fixed Share": {
+          "log_loss": 0.7084858052736996,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Solo escenario": {
+          "log_loss": 0.7088506278047694,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Escenario + HMM": {
+          "log_loss": 0.7068266726163175,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        },
+        "Red neuronal": {
+          "log_loss": 0.6882310509681702,
+          "net_per_opportunity": 0.0,
+          "participation": 0.0,
+          "dsr": 0.5,
+          "dsr_p": 0.5
+        }
+      }
+    }
+  ],
+  "cpcv_description": "Por estilo se evaluaron 28 particiones con purga y siete trayectorias. El informe conserva el Sharpe deflactado por política y los resultados por pliegue.",
+  "inference": "Los p ajustados corresponden al contraste de ventaja (de la red en H3 y H6). H5 aporta p conservador de 1 por la ausencia de variación económica. Un umbral descriptivo no prueba ventaja operativa."
+}

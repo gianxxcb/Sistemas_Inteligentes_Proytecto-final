@@ -1,0 +1,137 @@
+[
+  {
+    "style": "tactical",
+    "expert": "BreakoutExpert",
+    "before": 96204,
+    "resolved": 52445,
+    "kept": 52472,
+    "before_uniqueness": 0.5813886289199762,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "tactical",
+    "expert": "MomentumExpert",
+    "before": 121349,
+    "resolved": 64860,
+    "kept": 64901,
+    "before_uniqueness": 0.5670254414972815,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "tactical",
+    "expert": "ReversalExpert",
+    "before": 14245,
+    "resolved": 12939,
+    "kept": 12979,
+    "before_uniqueness": 0.9345731509043197,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "tactical",
+    "expert": "TrendExpert",
+    "before": 57943,
+    "resolved": 36481,
+    "kept": 36511,
+    "before_uniqueness": 0.6852583613376324,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "tactical",
+    "expert": "VolatilityExpert",
+    "before": 60016,
+    "resolved": 38362,
+    "kept": 38404,
+    "before_uniqueness": 0.6957943421212734,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_short",
+    "expert": "BreakoutExpert",
+    "before": 18100,
+    "resolved": 13819,
+    "kept": 13835,
+    "before_uniqueness": 0.8072299818096782,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_short",
+    "expert": "MomentumExpert",
+    "before": 27554,
+    "resolved": 19808,
+    "kept": 19825,
+    "before_uniqueness": 0.765820851847042,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_short",
+    "expert": "ReversalExpert",
+    "before": 9039,
+    "resolved": 7765,
+    "kept": 7799,
+    "before_uniqueness": 0.8932974549431016,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_short",
+    "expert": "TrendExpert",
+    "before": 15391,
+    "resolved": 11472,
+    "kept": 11486,
+    "before_uniqueness": 0.7887453918030073,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_short",
+    "expert": "VolatilityExpert",
+    "before": 24695,
+    "resolved": 15655,
+    "kept": 15677,
+    "before_uniqueness": 0.6874726531048476,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_positional",
+    "expert": "BreakoutExpert",
+    "before": 2128,
+    "resolved": 1988,
+    "kept": 2004,
+    "before_uniqueness": 0.9544329573934837,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_positional",
+    "expert": "MomentumExpert",
+    "before": 3422,
+    "resolved": 3080,
+    "kept": 3096,
+    "before_uniqueness": 0.9220974170400675,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_positional",
+    "expert": "ReversalExpert",
+    "before": 1630,
+    "resolved": 1539,
+    "kept": 1546,
+    "before_uniqueness": 0.9606609699094362,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_positional",
+    "expert": "TrendExpert",
+    "before": 1900,
+    "resolved": 1695,
+    "kept": 1707,
+    "before_uniqueness": 0.9113905597326649,
+    "uniqueness": 1.0
+  },
+  {
+    "style": "swing_positional",
+    "expert": "VolatilityExpert",
+    "before": 2754,
+    "resolved": 2472,
+    "kept": 2488,
+    "before_uniqueness": 0.9199586748279559,
+    "uniqueness": 1.0
+  }
+]

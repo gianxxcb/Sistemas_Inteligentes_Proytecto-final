@@ -1,0 +1,48 @@
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+baseRadius = "6px"
+buttonRadius = "6px"
+showWidgetBorder = true
+showSidebarBorder = true
+paddingTop = "1.25rem"
+
+[theme.light]
+primaryColor = "#14645D"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F7F6"
+textColor = "#121A36"
+linkColor = "#205060"
+borderColor = "#D5E2DF"
+dataframeHeaderBackgroundColor = "#EAF1EF"
+dataframeHeaderTextColor = "#19324D"
+chartCategoricalColors = ["#41806A", "#337370", "#205060", "#19324D", "#121A36"]
+
+[theme.light.sidebar]
+primaryColor = "#77BCAB"
+backgroundColor = "#121A36"
+secondaryBackgroundColor = "#19324D"
+textColor = "#F1F7F5"
+borderColor = "#385365"
+linkColor = "#9AD7C7"
+
+[theme.dark]
+primaryColor = "#7AD4BF"
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#151919"
+textColor = "#F2F5F5"
+linkColor = "#91DCCD"
+borderColor = "#465353"
+dataframeHeaderBackgroundColor = "#202828"
+dataframeHeaderTextColor = "#F2F5F5"
+chartCategoricalColors = ["#7AD4BF", "#F0A188", "#8AB5E0", "#DFCD81", "#B6A3D7"]
+
+[theme.dark.sidebar]
+backgroundColor = "#101414"
+secondaryBackgroundColor = "#202828"
+

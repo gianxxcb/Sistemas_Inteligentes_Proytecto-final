@@ -1,0 +1,1463 @@
+[
+  {
+    "level1": {
+      "Solo escenario/Uniforme": {
+        "loss_p": 0.8413447460685429,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Hedge": {
+        "loss_p": 0.22793716192245483,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Fixed Share": {
+        "loss_p": 0.7271652221679688,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Uniforme": {
+        "loss_p": 0.9192852688164583,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Hedge": {
+        "loss_p": 0.5723321437835693,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Fixed Share": {
+        "loss_p": 0.928324818611145,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      }
+    },
+    "style": "tactical",
+    "observations": 23859,
+    "months": 24,
+    "splits": [
+      {
+        "fold": 0,
+        "blocks": [
+          0,
+          1
+        ],
+        "train": 17906,
+        "test": 5943,
+        "path": 6,
+        "purged": 3,
+        "embargoed": 7
+      },
+      {
+        "fold": 1,
+        "blocks": [
+          0,
+          2
+        ],
+        "train": 18074,
+        "test": 5685,
+        "path": 5,
+        "purged": 5,
+        "embargoed": 13
+      },
+      {
+        "fold": 2,
+        "blocks": [
+          0,
+          3
+        ],
+        "train": 17632,
+        "test": 6183,
+        "path": 4,
+        "purged": 5,
+        "embargoed": 7
+      },
+      {
+        "fold": 3,
+        "blocks": [
+          0,
+          4
+        ],
+        "train": 17757,
+        "test": 6061,
+        "path": 3,
+        "purged": 6,
+        "embargoed": 9
+      },
+      {
+        "fold": 4,
+        "blocks": [
+          0,
+          5
+        ],
+        "train": 17634,
+        "test": 6172,
+        "path": 2,
+        "purged": 8,
+        "embargoed": 8
+      },
+      {
+        "fold": 5,
+        "blocks": [
+          0,
+          6
+        ],
+        "train": 17765,
+        "test": 6045,
+        "path": 1,
+        "purged": 10,
+        "embargoed": 9
+      },
+      {
+        "fold": 6,
+        "blocks": [
+          0,
+          7
+        ],
+        "train": 17156,
+        "test": 6670,
+        "path": 0,
+        "purged": 4,
+        "embargoed": 6
+      },
+      {
+        "fold": 7,
+        "blocks": [
+          1,
+          2
+        ],
+        "train": 18508,
+        "test": 5328,
+        "path": 2,
+        "purged": 2,
+        "embargoed": 7
+      },
+      {
+        "fold": 8,
+        "blocks": [
+          1,
+          3
+        ],
+        "train": 17973,
+        "test": 5826,
+        "path": 5,
+        "purged": 6,
+        "embargoed": 8
+      },
+      {
+        "fold": 9,
+        "blocks": [
+          1,
+          4
+        ],
+        "train": 18098,
+        "test": 5704,
+        "path": 1,
+        "purged": 7,
+        "embargoed": 10
+      },
+      {
+        "fold": 10,
+        "blocks": [
+          1,
+          5
+        ],
+        "train": 17975,
+        "test": 5815,
+        "path": 4,
+        "purged": 9,
+        "embargoed": 9
+      },
+      {
+        "fold": 11,
+        "blocks": [
+          1,
+          6
+        ],
+        "train": 18106,
+        "test": 5688,
+        "path": 0,
+        "purged": 11,
+        "embargoed": 10
+      },
+      {
+        "fold": 12,
+        "blocks": [
+          1,
+          7
+        ],
+        "train": 17497,
+        "test": 6313,
+        "path": 3,
+        "purged": 5,
+        "embargoed": 7
+      },
+      {
+        "fold": 13,
+        "blocks": [
+          2,
+          3
+        ],
+        "train": 18207,
+        "test": 5568,
+        "path": 1,
+        "purged": 1,
+        "embargoed": 1
+      },
+      {
+        "fold": 14,
+        "blocks": [
+          2,
+          4
+        ],
+        "train": 18290,
+        "test": 5446,
+        "path": 4,
+        "purged": 5,
+        "embargoed": 10
+      },
+      {
+        "fold": 15,
+        "blocks": [
+          2,
+          5
+        ],
+        "train": 18167,
+        "test": 5557,
+        "path": 0,
+        "purged": 7,
+        "embargoed": 9
+      },
+      {
+        "fold": 16,
+        "blocks": [
+          2,
+          6
+        ],
+        "train": 18298,
+        "test": 5430,
+        "path": 3,
+        "purged": 9,
+        "embargoed": 10
+      },
+      {
+        "fold": 17,
+        "blocks": [
+          2,
+          7
+        ],
+        "train": 17689,
+        "test": 6055,
+        "path": 6,
+        "purged": 3,
+        "embargoed": 7
+      },
+      {
+        "fold": 18,
+        "blocks": [
+          3,
+          4
+        ],
+        "train": 17875,
+        "test": 5944,
+        "path": 0,
+        "purged": 5,
+        "embargoed": 3
+      },
+      {
+        "fold": 19,
+        "blocks": [
+          3,
+          5
+        ],
+        "train": 17725,
+        "test": 6055,
+        "path": 3,
+        "purged": 7,
+        "embargoed": 3
+      },
+      {
+        "fold": 20,
+        "blocks": [
+          3,
+          6
+        ],
+        "train": 17856,
+        "test": 5928,
+        "path": 6,
+        "purged": 9,
+        "embargoed": 4
+      },
+      {
+        "fold": 21,
+        "blocks": [
+          3,
+          7
+        ],
+        "train": 17247,
+        "test": 6553,
+        "path": 2,
+        "purged": 3,
+        "embargoed": 1
+      },
+      {
+        "fold": 22,
+        "blocks": [
+          4,
+          5
+        ],
+        "train": 17898,
+        "test": 5933,
+        "path": 6,
+        "purged": 0,
+        "embargoed": 2
+      },
+      {
+        "fold": 23,
+        "blocks": [
+          4,
+          6
+        ],
+        "train": 17981,
+        "test": 5806,
+        "path": 2,
+        "purged": 10,
+        "embargoed": 6
+      },
+      {
+        "fold": 24,
+        "blocks": [
+          4,
+          7
+        ],
+        "train": 17372,
+        "test": 6431,
+        "path": 5,
+        "purged": 4,
+        "embargoed": 3
+      },
+      {
+        "fold": 25,
+        "blocks": [
+          5,
+          6
+        ],
+        "train": 17890,
+        "test": 5917,
+        "path": 5,
+        "purged": 12,
+        "embargoed": 3
+      },
+      {
+        "fold": 26,
+        "blocks": [
+          5,
+          7
+        ],
+        "train": 17249,
+        "test": 6542,
+        "path": 1,
+        "purged": 6,
+        "embargoed": 2
+      },
+      {
+        "fold": 27,
+        "blocks": [
+          6,
+          7
+        ],
+        "train": 17414,
+        "test": 6415,
+        "path": 4,
+        "purged": 0,
+        "embargoed": 0
+      }
+    ],
+    "paths": 7,
+    "policies": {
+      "Uniforme": {
+        "log_loss": 0.5648535568015414,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Hedge": {
+        "log_loss": 0.5648950896595747,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Fixed Share": {
+        "log_loss": 0.5648518532720311,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Solo escenario": {
+        "log_loss": 0.5648535568015414,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Escenario + HMM": {
+        "log_loss": 0.564887206716859,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Red neuronal": {
+        "log_loss": 0.5650118589401245,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      }
+    },
+    "h5": {
+      "2023": {
+        "rows": 10901,
+        "log_loss_gain": 0.0,
+        "loss_scenario": 0.54919339313219,
+        "loss_hmm": 0.54919339313219,
+        "net_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "passed": false
+      },
+      "2024": {
+        "rows": 12952,
+        "log_loss_gain": 0.0,
+        "loss_scenario": 0.5828911903820724,
+        "loss_hmm": 0.5828911903820724,
+        "net_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "passed": false
+      }
+    },
+    "h6": {
+      "Uniforme": {
+        "loss_p": 0.626537024974823,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Hedge": {
+        "loss_p": 0.5055936574935913,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Fixed Share": {
+        "loss_p": 0.626537024974823,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario": {
+        "loss_p": 0.626537024974823,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM": {
+        "loss_p": 0.550214946269989,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      }
+    },
+    "level1_supported": false,
+    "selected_policy": "Fixed Share",
+    "gate_supported": false
+  },
+  {
+    "level1": {
+      "Solo escenario/Uniforme": {
+        "loss_p": 0.9615845875733098,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Hedge": {
+        "loss_p": 0.9463087320327759,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Fixed Share": {
+        "loss_p": 0.9697864651679993,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Uniforme": {
+        "loss_p": 0.9524520039558411,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Hedge": {
+        "loss_p": 0.9463087320327759,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Fixed Share": {
+        "loss_p": 0.9524520039558411,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      }
+    },
+    "style": "swing_short",
+    "observations": 7158,
+    "months": 24,
+    "splits": [
+      {
+        "fold": 0,
+        "blocks": [
+          0,
+          1
+        ],
+        "train": 5260,
+        "test": 1885,
+        "path": 6,
+        "purged": 4,
+        "embargoed": 9
+      },
+      {
+        "fold": 1,
+        "blocks": [
+          0,
+          2
+        ],
+        "train": 5404,
+        "test": 1642,
+        "path": 5,
+        "purged": 2,
+        "embargoed": 20
+      },
+      {
+        "fold": 2,
+        "blocks": [
+          0,
+          3
+        ],
+        "train": 5261,
+        "test": 1820,
+        "path": 4,
+        "purged": 3,
+        "embargoed": 8
+      },
+      {
+        "fold": 3,
+        "blocks": [
+          0,
+          4
+        ],
+        "train": 5226,
+        "test": 1810,
+        "path": 3,
+        "purged": 7,
+        "embargoed": 38
+      },
+      {
+        "fold": 4,
+        "blocks": [
+          0,
+          5
+        ],
+        "train": 5181,
+        "test": 1861,
+        "path": 2,
+        "purged": 42,
+        "embargoed": 11
+      },
+      {
+        "fold": 5,
+        "blocks": [
+          0,
+          6
+        ],
+        "train": 5167,
+        "test": 1900,
+        "path": 1,
+        "purged": 15,
+        "embargoed": 8
+      },
+      {
+        "fold": 6,
+        "blocks": [
+          0,
+          7
+        ],
+        "train": 5056,
+        "test": 2060,
+        "path": 0,
+        "purged": 2,
+        "embargoed": 2
+      },
+      {
+        "fold": 7,
+        "blocks": [
+          1,
+          2
+        ],
+        "train": 5509,
+        "test": 1587,
+        "path": 2,
+        "purged": 2,
+        "embargoed": 18
+      },
+      {
+        "fold": 8,
+        "blocks": [
+          1,
+          3
+        ],
+        "train": 5262,
+        "test": 1765,
+        "path": 5,
+        "purged": 8,
+        "embargoed": 15
+      },
+      {
+        "fold": 9,
+        "blocks": [
+          1,
+          4
+        ],
+        "train": 5227,
+        "test": 1755,
+        "path": 1,
+        "purged": 12,
+        "embargoed": 45
+      },
+      {
+        "fold": 10,
+        "blocks": [
+          1,
+          5
+        ],
+        "train": 5182,
+        "test": 1806,
+        "path": 4,
+        "purged": 47,
+        "embargoed": 18
+      },
+      {
+        "fold": 11,
+        "blocks": [
+          1,
+          6
+        ],
+        "train": 5168,
+        "test": 1845,
+        "path": 0,
+        "purged": 20,
+        "embargoed": 15
+      },
+      {
+        "fold": 12,
+        "blocks": [
+          1,
+          7
+        ],
+        "train": 5057,
+        "test": 2005,
+        "path": 3,
+        "purged": 7,
+        "embargoed": 9
+      },
+      {
+        "fold": 13,
+        "blocks": [
+          2,
+          3
+        ],
+        "train": 5537,
+        "test": 1522,
+        "path": 1,
+        "purged": 3,
+        "embargoed": 6
+      },
+      {
+        "fold": 14,
+        "blocks": [
+          2,
+          4
+        ],
+        "train": 5418,
+        "test": 1512,
+        "path": 4,
+        "purged": 7,
+        "embargoed": 54
+      },
+      {
+        "fold": 15,
+        "blocks": [
+          2,
+          5
+        ],
+        "train": 5373,
+        "test": 1563,
+        "path": 0,
+        "purged": 42,
+        "embargoed": 27
+      },
+      {
+        "fold": 16,
+        "blocks": [
+          2,
+          6
+        ],
+        "train": 5359,
+        "test": 1602,
+        "path": 3,
+        "purged": 15,
+        "embargoed": 24
+      },
+      {
+        "fold": 17,
+        "blocks": [
+          2,
+          7
+        ],
+        "train": 5248,
+        "test": 1762,
+        "path": 6,
+        "purged": 2,
+        "embargoed": 18
+      },
+      {
+        "fold": 18,
+        "blocks": [
+          3,
+          4
+        ],
+        "train": 5365,
+        "test": 1690,
+        "path": 0,
+        "purged": 1,
+        "embargoed": 36
+      },
+      {
+        "fold": 19,
+        "blocks": [
+          3,
+          5
+        ],
+        "train": 5230,
+        "test": 1741,
+        "path": 3,
+        "purged": 43,
+        "embargoed": 15
+      },
+      {
+        "fold": 20,
+        "blocks": [
+          3,
+          6
+        ],
+        "train": 5216,
+        "test": 1780,
+        "path": 6,
+        "purged": 16,
+        "embargoed": 12
+      },
+      {
+        "fold": 21,
+        "blocks": [
+          3,
+          7
+        ],
+        "train": 5105,
+        "test": 1940,
+        "path": 2,
+        "purged": 3,
+        "embargoed": 6
+      },
+      {
+        "fold": 22,
+        "blocks": [
+          4,
+          5
+        ],
+        "train": 5330,
+        "test": 1731,
+        "path": 6,
+        "purged": 11,
+        "embargoed": 9
+      },
+      {
+        "fold": 23,
+        "blocks": [
+          4,
+          6
+        ],
+        "train": 5181,
+        "test": 1770,
+        "path": 2,
+        "purged": 20,
+        "embargoed": 42
+      },
+      {
+        "fold": 24,
+        "blocks": [
+          4,
+          7
+        ],
+        "train": 5070,
+        "test": 1930,
+        "path": 5,
+        "purged": 7,
+        "embargoed": 36
+      },
+      {
+        "fold": 25,
+        "blocks": [
+          5,
+          6
+        ],
+        "train": 5232,
+        "test": 1821,
+        "path": 5,
+        "purged": 36,
+        "embargoed": 6
+      },
+      {
+        "fold": 26,
+        "blocks": [
+          5,
+          7
+        ],
+        "train": 5025,
+        "test": 1981,
+        "path": 1,
+        "purged": 42,
+        "embargoed": 9
+      },
+      {
+        "fold": 27,
+        "blocks": [
+          6,
+          7
+        ],
+        "train": 5057,
+        "test": 2020,
+        "path": 4,
+        "purged": 13,
+        "embargoed": 0
+      }
+    ],
+    "paths": 7,
+    "policies": {
+      "Uniforme": {
+        "log_loss": 0.6595053055391866,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Hedge": {
+        "log_loss": 0.6595045784016941,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Fixed Share": {
+        "log_loss": 0.65949758159075,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Solo escenario": {
+        "log_loss": 0.6603922136279005,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Escenario + HMM": {
+        "log_loss": 0.6608503163064564,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Red neuronal": {
+        "log_loss": 0.6577167510986328,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      }
+    },
+    "h5": {
+      "2023": {
+        "rows": 3167,
+        "log_loss_gain": -1.927057290651568e-05,
+        "loss_scenario": 0.6713046931646204,
+        "loss_hmm": 0.6713176295906524,
+        "net_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "passed": false
+      },
+      "2024": {
+        "rows": 3990,
+        "log_loss_gain": 6.601752809853867e-05,
+        "loss_scenario": 0.6617028857094123,
+        "loss_hmm": 0.661659201720562,
+        "net_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "passed": false
+      }
+    },
+    "h6": {
+      "Uniforme": {
+        "loss_p": 0.02632039785385132,
+        "return_p": 1.0,
+        "loss_p_fdr": 0.3724158525466919,
+        "return_p_fdr": 1.0
+      },
+      "Hedge": {
+        "loss_p": 0.022839844226837158,
+        "return_p": 1.0,
+        "loss_p_fdr": 0.3724158525466919,
+        "return_p_fdr": 1.0
+      },
+      "Fixed Share": {
+        "loss_p": 0.028213322162628174,
+        "return_p": 1.0,
+        "loss_p_fdr": 0.3724158525466919,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario": {
+        "loss_p": 0.00216752290725708,
+        "return_p": 1.0,
+        "loss_p_fdr": 0.07152825593948364,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM": {
+        "loss_p": 0.00013905763626098633,
+        "return_p": 1.0,
+        "loss_p_fdr": 0.009177803993225098,
+        "return_p_fdr": 1.0
+      }
+    },
+    "level1_supported": false,
+    "selected_policy": "Fixed Share",
+    "gate_supported": false
+  },
+  {
+    "level1": {
+      "Solo escenario/Uniforme": {
+        "loss_p": 0.47463488578796387,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Hedge": {
+        "loss_p": 0.5126891136169434,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario/Fixed Share": {
+        "loss_p": 0.47463488578796387,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Uniforme": {
+        "loss_p": 0.2722952365875244,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Hedge": {
+        "loss_p": 0.2722952365875244,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM/Fixed Share": {
+        "loss_p": 0.2722952365875244,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      }
+    },
+    "style": "swing_positional",
+    "observations": 1060,
+    "months": 22,
+    "splits": [
+      {
+        "fold": 0,
+        "blocks": [
+          0,
+          1
+        ],
+        "train": 840,
+        "test": 210,
+        "path": 6,
+        "purged": 0,
+        "embargoed": 10
+      },
+      {
+        "fold": 1,
+        "blocks": [
+          0,
+          2
+        ],
+        "train": 780,
+        "test": 242,
+        "path": 5,
+        "purged": 2,
+        "embargoed": 9
+      },
+      {
+        "fold": 2,
+        "blocks": [
+          0,
+          3
+        ],
+        "train": 735,
+        "test": 284,
+        "path": 4,
+        "purged": 10,
+        "embargoed": 23
+      },
+      {
+        "fold": 3,
+        "blocks": [
+          0,
+          4
+        ],
+        "train": 691,
+        "test": 293,
+        "path": 3,
+        "purged": 16,
+        "embargoed": 7
+      },
+      {
+        "fold": 4,
+        "blocks": [
+          0,
+          5
+        ],
+        "train": 758,
+        "test": 246,
+        "path": 2,
+        "purged": 11,
+        "embargoed": 14
+      },
+      {
+        "fold": 5,
+        "blocks": [
+          0,
+          6
+        ],
+        "train": 778,
+        "test": 228,
+        "path": 1,
+        "purged": 8,
+        "embargoed": 5
+      },
+      {
+        "fold": 6,
+        "blocks": [
+          0,
+          7
+        ],
+        "train": 673,
+        "test": 343,
+        "path": 0,
+        "purged": 2,
+        "embargoed": 5
+      },
+      {
+        "fold": 7,
+        "blocks": [
+          1,
+          2
+        ],
+        "train": 828,
+        "test": 190,
+        "path": 2,
+        "purged": 2,
+        "embargoed": 4
+      },
+      {
+        "fold": 8,
+        "blocks": [
+          1,
+          3
+        ],
+        "train": 746,
+        "test": 232,
+        "path": 5,
+        "purged": 10,
+        "embargoed": 28
+      },
+      {
+        "fold": 9,
+        "blocks": [
+          1,
+          4
+        ],
+        "train": 702,
+        "test": 241,
+        "path": 1,
+        "purged": 16,
+        "embargoed": 12
+      },
+      {
+        "fold": 10,
+        "blocks": [
+          1,
+          5
+        ],
+        "train": 769,
+        "test": 194,
+        "path": 4,
+        "purged": 11,
+        "embargoed": 19
+      },
+      {
+        "fold": 11,
+        "blocks": [
+          1,
+          6
+        ],
+        "train": 789,
+        "test": 176,
+        "path": 0,
+        "purged": 8,
+        "embargoed": 10
+      },
+      {
+        "fold": 12,
+        "blocks": [
+          1,
+          7
+        ],
+        "train": 684,
+        "test": 291,
+        "path": 3,
+        "purged": 2,
+        "embargoed": 10
+      },
+      {
+        "fold": 13,
+        "blocks": [
+          2,
+          3
+        ],
+        "train": 743,
+        "test": 264,
+        "path": 1,
+        "purged": 8,
+        "embargoed": 18
+      },
+      {
+        "fold": 14,
+        "blocks": [
+          2,
+          4
+        ],
+        "train": 687,
+        "test": 273,
+        "path": 4,
+        "purged": 14,
+        "embargoed": 6
+      },
+      {
+        "fold": 15,
+        "blocks": [
+          2,
+          5
+        ],
+        "train": 754,
+        "test": 226,
+        "path": 0,
+        "purged": 9,
+        "embargoed": 13
+      },
+      {
+        "fold": 16,
+        "blocks": [
+          2,
+          6
+        ],
+        "train": 774,
+        "test": 208,
+        "path": 3,
+        "purged": 6,
+        "embargoed": 4
+      },
+      {
+        "fold": 17,
+        "blocks": [
+          2,
+          7
+        ],
+        "train": 669,
+        "test": 323,
+        "path": 6,
+        "purged": 0,
+        "embargoed": 4
+      },
+      {
+        "fold": 18,
+        "blocks": [
+          3,
+          4
+        ],
+        "train": 725,
+        "test": 315,
+        "path": 0,
+        "purged": 10,
+        "embargoed": 2
+      },
+      {
+        "fold": 19,
+        "blocks": [
+          3,
+          5
+        ],
+        "train": 709,
+        "test": 268,
+        "path": 3,
+        "purged": 17,
+        "embargoed": 27
+      },
+      {
+        "fold": 20,
+        "blocks": [
+          3,
+          6
+        ],
+        "train": 729,
+        "test": 250,
+        "path": 6,
+        "purged": 14,
+        "embargoed": 18
+      },
+      {
+        "fold": 21,
+        "blocks": [
+          3,
+          7
+        ],
+        "train": 624,
+        "test": 365,
+        "path": 2,
+        "purged": 8,
+        "embargoed": 18
+      },
+      {
+        "fold": 22,
+        "blocks": [
+          4,
+          5
+        ],
+        "train": 709,
+        "test": 277,
+        "path": 6,
+        "purged": 12,
+        "embargoed": 9
+      },
+      {
+        "fold": 23,
+        "blocks": [
+          4,
+          6
+        ],
+        "train": 685,
+        "test": 259,
+        "path": 2,
+        "purged": 20,
+        "embargoed": 2
+      },
+      {
+        "fold": 24,
+        "blocks": [
+          4,
+          7
+        ],
+        "train": 580,
+        "test": 374,
+        "path": 5,
+        "purged": 14,
+        "embargoed": 2
+      },
+      {
+        "fold": 25,
+        "blocks": [
+          5,
+          6
+        ],
+        "train": 816,
+        "test": 212,
+        "path": 5,
+        "purged": 1,
+        "embargoed": 0
+      },
+      {
+        "fold": 26,
+        "blocks": [
+          5,
+          7
+        ],
+        "train": 647,
+        "test": 327,
+        "path": 1,
+        "purged": 9,
+        "embargoed": 9
+      },
+      {
+        "fold": 27,
+        "blocks": [
+          6,
+          7
+        ],
+        "train": 704,
+        "test": 309,
+        "path": 4,
+        "purged": 6,
+        "embargoed": 0
+      }
+    ],
+    "paths": 7,
+    "policies": {
+      "Uniforme": {
+        "log_loss": 0.7084662994446496,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Hedge": {
+        "log_loss": 0.7087851333414369,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Fixed Share": {
+        "log_loss": 0.7084858052736996,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Solo escenario": {
+        "log_loss": 0.7088506278047694,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Escenario + HMM": {
+        "log_loss": 0.7068266726163175,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      },
+      "Red neuronal": {
+        "log_loss": 0.6882310509681702,
+        "net_per_opportunity": 0.0,
+        "participation": 0.0,
+        "dsr": 0.5,
+        "dsr_p": 0.5
+      }
+    },
+    "h5": {
+      "2023": {
+        "rows": 392,
+        "log_loss_gain": 0.0,
+        "loss_scenario": 0.7865268912199284,
+        "loss_hmm": 0.7865268912199284,
+        "net_delta": 0.00020150572539101626,
+        "ci": [
+          0.0,
+          0.0005282595644755722
+        ],
+        "passed": false
+      },
+      "2024": {
+        "rows": 668,
+        "log_loss_gain": 0.002175311613487829,
+        "loss_scenario": 0.7203059086700703,
+        "loss_hmm": 0.7187390188616763,
+        "net_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "passed": false
+      }
+    },
+    "h6": {
+      "Uniforme": {
+        "loss_p": 0.23138880729675293,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Hedge": {
+        "loss_p": 0.23138880729675293,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Fixed Share": {
+        "loss_p": 0.22170329093933105,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Solo escenario": {
+        "loss_p": 0.1110537052154541,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      },
+      "Escenario + HMM": {
+        "loss_p": 0.2722952365875244,
+        "return_p": 1.0,
+        "loss_p_fdr": 1.0,
+        "return_p_fdr": 1.0
+      }
+    },
+    "level1_supported": false,
+    "selected_policy": "Uniforme",
+    "gate_supported": false
+  }
+]

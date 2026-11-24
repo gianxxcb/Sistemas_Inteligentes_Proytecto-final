@@ -1,0 +1,765 @@
+{
+  "files": [
+    {
+      "file": ".streamlit/config.toml",
+      "bytes": 1140
+    },
+    {
+      "file": "app.py",
+      "bytes": 2476
+    },
+    {
+      "file": "apps/research_pages_v3.py",
+      "bytes": 36662
+    },
+    {
+      "file": "apps/technique_guide.py",
+      "bytes": 4181
+    },
+    {
+      "file": "apps/terminal_visuals.py",
+      "bytes": 8944
+    },
+    {
+      "file": "apps/trading_desk_v3.py",
+      "bytes": 12860
+    },
+    {
+      "file": "data/episodes/causal_v3/v3_episodes_swing_positional.parquet",
+      "bytes": 257154
+    },
+    {
+      "file": "data/episodes/causal_v3/v3_episodes_swing_short.parquet",
+      "bytes": 2064555
+    },
+    {
+      "file": "data/episodes/causal_v3/v3_episodes_tactical.parquet",
+      "bytes": 6598953
+    },
+    {
+      "file": "data/episodes/independent_v3/summary.json",
+      "bytes": 3112
+    },
+    {
+      "file": "data/episodes/independent_v3/v3_episodes_swing_positional.parquet",
+      "bytes": 229160
+    },
+    {
+      "file": "data/episodes/independent_v3/v3_episodes_swing_short.parquet",
+      "bytes": 1501649
+    },
+    {
+      "file": "data/episodes/independent_v3/v3_episodes_tactical.parquet",
+      "bytes": 4214121
+    },
+    {
+      "file": "data/episodes/v3_episodes_swing_positional.parquet",
+      "bytes": 32810
+    },
+    {
+      "file": "data/episodes/v3_episodes_swing_short.parquet",
+      "bytes": 257375
+    },
+    {
+      "file": "data/episodes/v3_episodes_tactical.parquet",
+      "bytes": 1032874
+    },
+    {
+      "file": "data/features/crypto/features_1d.parquet",
+      "bytes": 5252303
+    },
+    {
+      "file": "data/features/crypto/features_1h.parquet",
+      "bytes": 6414813
+    },
+    {
+      "file": "data/features/crypto/features_4h.parquet",
+      "bytes": 5510684
+    },
+    {
+      "file": "data/processed/v3_microstructure/spread_proxy.parquet",
+      "bytes": 18749544
+    },
+    {
+      "file": "data/raw/futures/15m/1000SHIBUSDT.parquet",
+      "bytes": 25780
+    },
+    {
+      "file": "data/raw/futures/15m/AAVEUSDT.parquet",
+      "bytes": 21663
+    },
+    {
+      "file": "data/raw/futures/15m/ADAUSDT.parquet",
+      "bytes": 20268
+    },
+    {
+      "file": "data/raw/futures/15m/ALGOUSDT.parquet",
+      "bytes": 29686
+    },
+    {
+      "file": "data/raw/futures/15m/ATOMUSDT.parquet",
+      "bytes": 18731
+    },
+    {
+      "file": "data/raw/futures/15m/AVAXUSDT.parquet",
+      "bytes": 63312
+    },
+    {
+      "file": "data/raw/futures/15m/BCHUSDT.parquet",
+      "bytes": 22769
+    },
+    {
+      "file": "data/raw/futures/15m/BNBUSDT.parquet",
+      "bytes": 22761
+    },
+    {
+      "file": "data/raw/futures/15m/BTCUSDT.parquet",
+      "bytes": 37925
+    },
+    {
+      "file": "data/raw/futures/15m/DOGEUSDT.parquet",
+      "bytes": 26746
+    },
+    {
+      "file": "data/raw/futures/15m/DOTUSDT.parquet",
+      "bytes": 26717
+    },
+    {
+      "file": "data/raw/futures/15m/ETCUSDT.parquet",
+      "bytes": 49371
+    },
+    {
+      "file": "data/raw/futures/15m/ETHUSDT.parquet",
+      "bytes": 24580
+    },
+    {
+      "file": "data/raw/futures/15m/FILUSDT.parquet",
+      "bytes": 28391
+    },
+    {
+      "file": "data/raw/futures/15m/LINKUSDT.parquet",
+      "bytes": 23631
+    },
+    {
+      "file": "data/raw/futures/15m/LTCUSDT.parquet",
+      "bytes": 20590
+    },
+    {
+      "file": "data/raw/futures/15m/NEARUSDT.parquet",
+      "bytes": 46741
+    },
+    {
+      "file": "data/raw/futures/15m/NEOUSDT.parquet",
+      "bytes": 37812
+    },
+    {
+      "file": "data/raw/futures/15m/POLUSDT.parquet",
+      "bytes": 28973
+    },
+    {
+      "file": "data/raw/futures/15m/SOLUSDT.parquet",
+      "bytes": 21264
+    },
+    {
+      "file": "data/raw/futures/15m/TRXUSDT.parquet",
+      "bytes": 30153
+    },
+    {
+      "file": "data/raw/futures/15m/UNIUSDT.parquet",
+      "bytes": 22060
+    },
+    {
+      "file": "data/raw/futures/15m/VETUSDT.parquet",
+      "bytes": 26267
+    },
+    {
+      "file": "data/raw/futures/15m/XLMUSDT.parquet",
+      "bytes": 31368
+    },
+    {
+      "file": "data/raw/futures/15m/XRPUSDT.parquet",
+      "bytes": 27531
+    },
+    {
+      "file": "data/raw/futures/1d/1000SHIBUSDT.parquet",
+      "bytes": 38913
+    },
+    {
+      "file": "data/raw/futures/1d/AAVEUSDT.parquet",
+      "bytes": 25427
+    },
+    {
+      "file": "data/raw/futures/1d/ADAUSDT.parquet",
+      "bytes": 30680
+    },
+    {
+      "file": "data/raw/futures/1d/ALGOUSDT.parquet",
+      "bytes": 32438
+    },
+    {
+      "file": "data/raw/futures/1d/ATOMUSDT.parquet",
+      "bytes": 27631
+    },
+    {
+      "file": "data/raw/futures/1d/AVAXUSDT.parquet",
+      "bytes": 27480
+    },
+    {
+      "file": "data/raw/futures/1d/BCHUSDT.parquet",
+      "bytes": 26863
+    },
+    {
+      "file": "data/raw/futures/1d/BNBUSDT.parquet",
+      "bytes": 25614
+    },
+    {
+      "file": "data/raw/futures/1d/BTCUSDT.parquet",
+      "bytes": 27285
+    },
+    {
+      "file": "data/raw/futures/1d/DOGEUSDT.parquet",
+      "bytes": 37389
+    },
+    {
+      "file": "data/raw/futures/1d/DOTUSDT.parquet",
+      "bytes": 28886
+    },
+    {
+      "file": "data/raw/futures/1d/ETCUSDT.parquet",
+      "bytes": 29079
+    },
+    {
+      "file": "data/raw/futures/1d/ETHUSDT.parquet",
+      "bytes": 29311
+    },
+    {
+      "file": "data/raw/futures/1d/FILUSDT.parquet",
+      "bytes": 28340
+    },
+    {
+      "file": "data/raw/futures/1d/LINKUSDT.parquet",
+      "bytes": 29345
+    },
+    {
+      "file": "data/raw/futures/1d/LTCUSDT.parquet",
+      "bytes": 27285
+    },
+    {
+      "file": "data/raw/futures/1d/NEARUSDT.parquet",
+      "bytes": 25524
+    },
+    {
+      "file": "data/raw/futures/1d/NEOUSDT.parquet",
+      "bytes": 27751
+    },
+    {
+      "file": "data/raw/futures/1d/POLUSDT.parquet",
+      "bytes": 36360
+    },
+    {
+      "file": "data/raw/futures/1d/SOLUSDT.parquet",
+      "bytes": 26764
+    },
+    {
+      "file": "data/raw/futures/1d/TRXUSDT.parquet",
+      "bytes": 36311
+    },
+    {
+      "file": "data/raw/futures/1d/UNIUSDT.parquet",
+      "bytes": 26597
+    },
+    {
+      "file": "data/raw/futures/1d/VETUSDT.parquet",
+      "bytes": 38065
+    },
+    {
+      "file": "data/raw/futures/1d/XLMUSDT.parquet",
+      "bytes": 36786
+    },
+    {
+      "file": "data/raw/futures/1d/XRPUSDT.parquet",
+      "bytes": 34261
+    },
+    {
+      "file": "data/raw/futures/1h/1000SHIBUSDT.parquet",
+      "bytes": 31751
+    },
+    {
+      "file": "data/raw/futures/1h/AAVEUSDT.parquet",
+      "bytes": 23396
+    },
+    {
+      "file": "data/raw/futures/1h/ADAUSDT.parquet",
+      "bytes": 25983
+    },
+    {
+      "file": "data/raw/futures/1h/ALGOUSDT.parquet",
+      "bytes": 35564
+    },
+    {
+      "file": "data/raw/futures/1h/ATOMUSDT.parquet",
+      "bytes": 20795
+    },
+    {
+      "file": "data/raw/futures/1h/AVAXUSDT.parquet",
+      "bytes": 24469
+    },
+    {
+      "file": "data/raw/futures/1h/BCHUSDT.parquet",
+      "bytes": 24366
+    },
+    {
+      "file": "data/raw/futures/1h/BNBUSDT.parquet",
+      "bytes": 23738
+    },
+    {
+      "file": "data/raw/futures/1h/BTCUSDT.parquet",
+      "bytes": 25593
+    },
+    {
+      "file": "data/raw/futures/1h/DOGEUSDT.parquet",
+      "bytes": 33242
+    },
+    {
+      "file": "data/raw/futures/1h/DOTUSDT.parquet",
+      "bytes": 29850
+    },
+    {
+      "file": "data/raw/futures/1h/ETCUSDT.parquet",
+      "bytes": 25303
+    },
+    {
+      "file": "data/raw/futures/1h/ETHUSDT.parquet",
+      "bytes": 26790
+    },
+    {
+      "file": "data/raw/futures/1h/FILUSDT.parquet",
+      "bytes": 30372
+    },
+    {
+      "file": "data/raw/futures/1h/LINKUSDT.parquet",
+      "bytes": 26438
+    },
+    {
+      "file": "data/raw/futures/1h/LTCUSDT.parquet",
+      "bytes": 23422
+    },
+    {
+      "file": "data/raw/futures/1h/NEARUSDT.parquet",
+      "bytes": 23766
+    },
+    {
+      "file": "data/raw/futures/1h/NEOUSDT.parquet",
+      "bytes": 21953
+    },
+    {
+      "file": "data/raw/futures/1h/POLUSDT.parquet",
+      "bytes": 31781
+    },
+    {
+      "file": "data/raw/futures/1h/SOLUSDT.parquet",
+      "bytes": 23901
+    },
+    {
+      "file": "data/raw/futures/1h/TRXUSDT.parquet",
+      "bytes": 32968
+    },
+    {
+      "file": "data/raw/futures/1h/UNIUSDT.parquet",
+      "bytes": 23809
+    },
+    {
+      "file": "data/raw/futures/1h/VETUSDT.parquet",
+      "bytes": 34016
+    },
+    {
+      "file": "data/raw/futures/1h/XLMUSDT.parquet",
+      "bytes": 34382
+    },
+    {
+      "file": "data/raw/futures/1h/XRPUSDT.parquet",
+      "bytes": 29981
+    },
+    {
+      "file": "data/raw/futures/4h/1000SHIBUSDT.parquet",
+      "bytes": 34286
+    },
+    {
+      "file": "data/raw/futures/4h/AAVEUSDT.parquet",
+      "bytes": 24401
+    },
+    {
+      "file": "data/raw/futures/4h/ADAUSDT.parquet",
+      "bytes": 28474
+    },
+    {
+      "file": "data/raw/futures/4h/ALGOUSDT.parquet",
+      "bytes": 36207
+    },
+    {
+      "file": "data/raw/futures/4h/ATOMUSDT.parquet",
+      "bytes": 22292
+    },
+    {
+      "file": "data/raw/futures/4h/AVAXUSDT.parquet",
+      "bytes": 25333
+    },
+    {
+      "file": "data/raw/futures/4h/BCHUSDT.parquet",
+      "bytes": 25397
+    },
+    {
+      "file": "data/raw/futures/4h/BNBUSDT.parquet",
+      "bytes": 24498
+    },
+    {
+      "file": "data/raw/futures/4h/BTCUSDT.parquet",
+      "bytes": 25968
+    },
+    {
+      "file": "data/raw/futures/4h/DOGEUSDT.parquet",
+      "bytes": 34710
+    },
+    {
+      "file": "data/raw/futures/4h/DOTUSDT.parquet",
+      "bytes": 30731
+    },
+    {
+      "file": "data/raw/futures/4h/ETCUSDT.parquet",
+      "bytes": 26468
+    },
+    {
+      "file": "data/raw/futures/4h/ETHUSDT.parquet",
+      "bytes": 27406
+    },
+    {
+      "file": "data/raw/futures/4h/FILUSDT.parquet",
+      "bytes": 30961
+    },
+    {
+      "file": "data/raw/futures/4h/LINKUSDT.parquet",
+      "bytes": 27677
+    },
+    {
+      "file": "data/raw/futures/4h/LTCUSDT.parquet",
+      "bytes": 24950
+    },
+    {
+      "file": "data/raw/futures/4h/NEARUSDT.parquet",
+      "bytes": 24655
+    },
+    {
+      "file": "data/raw/futures/4h/NEOUSDT.parquet",
+      "bytes": 23676
+    },
+    {
+      "file": "data/raw/futures/4h/POLUSDT.parquet",
+      "bytes": 35345
+    },
+    {
+      "file": "data/raw/futures/4h/SOLUSDT.parquet",
+      "bytes": 24972
+    },
+    {
+      "file": "data/raw/futures/4h/TRXUSDT.parquet",
+      "bytes": 34148
+    },
+    {
+      "file": "data/raw/futures/4h/UNIUSDT.parquet",
+      "bytes": 25168
+    },
+    {
+      "file": "data/raw/futures/4h/VETUSDT.parquet",
+      "bytes": 35493
+    },
+    {
+      "file": "data/raw/futures/4h/XLMUSDT.parquet",
+      "bytes": 36012
+    },
+    {
+      "file": "data/raw/futures/4h/XRPUSDT.parquet",
+      "bytes": 31007
+    },
+    {
+      "file": "experiments/v3/representation/scenario_recheck/daily_regime.parquet",
+      "bytes": 25733
+    },
+    {
+      "file": "experiments/v3/representation/scenario_recheck/summary.json",
+      "bytes": 2811
+    },
+    {
+      "file": "experiments/v3/representation/scenario_recheck/swing_positional/scenario_assignments_swing_positional.parquet",
+      "bytes": 32592
+    },
+    {
+      "file": "experiments/v3/representation/scenario_recheck/swing_short/scenario_assignments_swing_short.parquet",
+      "bytes": 49292
+    },
+    {
+      "file": "experiments/v3/representation/scenario_recheck/tactical/scenario_assignments_tactical.parquet",
+      "bytes": 38318
+    },
+    {
+      "file": "experiments/v3/representation/stability_review/training_summary.json",
+      "bytes": 29167
+    },
+    {
+      "file": "experiments/v3/specialists/architecture_comparison/architecture_comparison_swing_positional.json",
+      "bytes": 223334
+    },
+    {
+      "file": "experiments/v3/specialists/architecture_comparison/architecture_comparison_swing_short.json",
+      "bytes": 219528
+    },
+    {
+      "file": "experiments/v3/specialists/architecture_comparison/architecture_comparison_tactical.json",
+      "bytes": 223920
+    },
+    {
+      "file": "Reformulacion/v3/01_data_engine.md",
+      "bytes": 7994
+    },
+    {
+      "file": "Reformulacion/v3/02_feature_engine.md",
+      "bytes": 3921
+    },
+    {
+      "file": "Reformulacion/v3/03_representation_engine.md",
+      "bytes": 4507
+    },
+    {
+      "file": "Reformulacion/v3/04_scenario_engine.md",
+      "bytes": 7187
+    },
+    {
+      "file": "Reformulacion/v3/05_specialist_models.md",
+      "bytes": 10083
+    },
+    {
+      "file": "Reformulacion/v3/05b_catalogo_tecnicas_trading.md",
+      "bytes": 31374
+    },
+    {
+      "file": "Reformulacion/v3/06_meta_model.md",
+      "bytes": 8229
+    },
+    {
+      "file": "Reformulacion/v3/07_forecast_engine.md",
+      "bytes": 4644
+    },
+    {
+      "file": "Reformulacion/v3/08_evaluacion_validacion.md",
+      "bytes": 8114
+    },
+    {
+      "file": "Reformulacion/v3/09_riesgo_backtesting_visualizacion.md",
+      "bytes": 6513
+    },
+    {
+      "file": "Reformulacion/v3/10_roadmap_repositorio.md",
+      "bytes": 19196
+    },
+    {
+      "file": "Reformulacion/v3/11_redes_neuronales.md",
+      "bytes": 5195
+    },
+    {
+      "file": "Reformulacion/v3/12_episodios_y_simulador.md",
+      "bytes": 6998
+    },
+    {
+      "file": "Reformulacion/v3/13_division_de_datos_y_validacion.md",
+      "bytes": 3953
+    },
+    {
+      "file": "Reformulacion/v3/14_diario_de_casos_y_admision.md",
+      "bytes": 3598
+    },
+    {
+      "file": "Reformulacion/v3/15_modelo_de_costos.md",
+      "bytes": 7676
+    },
+    {
+      "file": "Reformulacion/v3/16_paso_del_tiempo_por_eventos.md",
+      "bytes": 7832
+    },
+    {
+      "file": "Reformulacion/v3/17_hipotesis_y_experimentos.md",
+      "bytes": 9922
+    },
+    {
+      "file": "Reformulacion/v3/CAMBIOS_v3.md",
+      "bytes": 5160
+    },
+    {
+      "file": "Reformulacion/v3/QuantLab_ML.md",
+      "bytes": 6636
+    },
+    {
+      "file": "reports/validation/audit_v3.csv",
+      "bytes": 12715
+    },
+    {
+      "file": "reports/validation/e10/decision.json",
+      "bytes": 4536
+    },
+    {
+      "file": "reports/validation/e7_orchestration/summary.json",
+      "bytes": 29418
+    },
+    {
+      "file": "reports/validation/e8/summary.json",
+      "bytes": 7252
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/control_equity.parquet",
+      "bytes": 88538
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/control_trades.parquet",
+      "bytes": 14635
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/equity.parquet",
+      "bytes": 82133
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/forecasts.parquet",
+      "bytes": 595820
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/report.json",
+      "bytes": 27791
+    },
+    {
+      "file": "reports/validation/integrated_20261122T171326074713/trades.parquet",
+      "bytes": 13353
+    },
+    {
+      "file": "reports/validation/integrated_current.txt",
+      "bytes": 32
+    },
+    {
+      "file": "reports/validation/margin_20261124T012928162162/control_equity.parquet",
+      "bytes": 105440
+    },
+    {
+      "file": "reports/validation/margin_20261124T012928162162/control_trades.parquet",
+      "bytes": 27325
+    },
+    {
+      "file": "reports/validation/margin_20261124T012928162162/equity.parquet",
+      "bytes": 88809
+    },
+    {
+      "file": "reports/validation/margin_20261124T012928162162/report.json",
+      "bytes": 521
+    },
+    {
+      "file": "reports/validation/margin_20261124T012928162162/trades.parquet",
+      "bytes": 24582
+    },
+    {
+      "file": "reports/validation/margin_current.txt",
+      "bytes": 28
+    },
+    {
+      "file": "reports/validation/quarantine_v3.csv",
+      "bytes": 8674
+    },
+    {
+      "file": "src/__init__.py",
+      "bytes": 0
+    },
+    {
+      "file": "src/experts/__init__.py",
+      "bytes": 947
+    },
+    {
+      "file": "src/experts/base_expert.py",
+      "bytes": 21376
+    },
+    {
+      "file": "src/experts/breakout_expert.py",
+      "bytes": 3890
+    },
+    {
+      "file": "src/experts/momentum_expert.py",
+      "bytes": 3518
+    },
+    {
+      "file": "src/experts/reversal_expert.py",
+      "bytes": 3542
+    },
+    {
+      "file": "src/experts/trend_expert.py",
+      "bytes": 3538
+    },
+    {
+      "file": "src/experts/volatility_expert.py",
+      "bytes": 3464
+    },
+    {
+      "file": "src/feature_engine/__init__.py",
+      "bytes": 1564
+    },
+    {
+      "file": "src/feature_engine/asset_context.py",
+      "bytes": 6324
+    },
+    {
+      "file": "src/feature_engine/baseline.py",
+      "bytes": 19966
+    },
+    {
+      "file": "src/feature_engine/derivatives_features.py",
+      "bytes": 6477
+    },
+    {
+      "file": "src/feature_engine/labels.py",
+      "bytes": 6914
+    },
+    {
+      "file": "src/feature_engine/momentum_features.py",
+      "bytes": 4934
+    },
+    {
+      "file": "src/feature_engine/multiscale_pipeline.py",
+      "bytes": 5467
+    },
+    {
+      "file": "src/feature_engine/pipeline.py",
+      "bytes": 20775
+    },
+    {
+      "file": "src/feature_engine/price_features.py",
+      "bytes": 3650
+    },
+    {
+      "file": "src/feature_engine/structure_features.py",
+      "bytes": 20228
+    },
+    {
+      "file": "src/feature_engine/technique_registry.json",
+      "bytes": 15135
+    },
+    {
+      "file": "src/feature_engine/technique_registry.py",
+      "bytes": 2290
+    },
+    {
+      "file": "src/feature_engine/trend_features.py",
+      "bytes": 11186
+    },
+    {
+      "file": "src/feature_engine/volatility_features.py",
+      "bytes": 8477
+    },
+    {
+      "file": "src/feature_engine/volume_features.py",
+      "bytes": 3700
+    }
+  ],
+  "total_bytes": 57411100
+}

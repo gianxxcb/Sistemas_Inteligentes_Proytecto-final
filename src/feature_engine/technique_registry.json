@@ -1,0 +1,346 @@
+{
+  "version": "2.0",
+  "period_unit": "calendar_days",
+  "timezone": "UTC",
+  "techniques": [
+    {
+      "id": "moving_averages",
+      "expert": "trend",
+      "role": "directional_bias",
+      "formula_ref": "05b §1.1",
+      "smoothing": "sma_and_ema",
+      "params": {
+        "sma_periods": {"default": [20, 50, 200], "search": [[9, 21], [20, 50], [50, 100, 200]]},
+        "ema_periods": {"default": [12, 26, 50], "search": [[8, 21], [12, 26], [20, 50]]},
+        "slope_period": {"default": 5, "search": [3, 5, 10]}
+      },
+      "outputs": ["dist_to_sma_N", "dist_to_ema_N", "sma_slope_20"],
+      "applicability": "trend_direction_and_dynamic_levels",
+      "invalidation": "price_closes_across_the_structural_level",
+      "failure_modes": ["whipsaw_in_ranges", "lag"]
+    },
+    {
+      "id": "macd",
+      "expert": "trend",
+      "role": "trend_confirmation_and_acceleration",
+      "formula_ref": "05b §1.2",
+      "smoothing": "ema",
+      "params": {
+        "fast": {"default": 12, "search": [6, 8, 12]},
+        "slow": {"default": 26, "search": [13, 17, 26]},
+        "signal": {"default": 9, "search": [5, 9]}
+      },
+      "outputs": ["macd_line", "macd_signal", "macd_histogram"],
+      "applicability": "trend_or_momentum_context",
+      "invalidation": "opposite_macd_signal_or_structural_break",
+      "failure_modes": ["lag", "false_crosses_in_ranges"]
+    },
+    {
+      "id": "adx_dmi",
+      "expert": "trend",
+      "role": "regime_filter",
+      "formula_ref": "05b §1.3",
+      "smoothing": "wilder_rma",
+      "params": {
+        "period": {"default": 14, "search": [7, 10, 14, 21]},
+        "strong_threshold": {"default": 25, "search": [20, 25, 30]},
+        "slope_period": {"default": 5, "search": [3, 5, 10]},
+        "percentile_window": {"default": 120, "search": [120, 250]}
+      },
+      "outputs": ["adx_14", "plus_di_14", "minus_di_14", "adx_slope_14", "adx_percentile_120"],
+      "applicability": "adx_above_or_rising_through_strong_threshold",
+      "invalidation": "adx_falls_and_directional_structure_breaks",
+      "failure_modes": ["double_smoothing_lag", "conventional_threshold"]
+    },
+    {
+      "id": "market_structure",
+      "expert": "trend",
+      "role": "trend_structure_and_invalidation",
+      "formula_ref": "05b §1.4",
+      "smoothing": "confirmed_pivots",
+      "params": {
+        "window": {"default": 20, "search": [10, 20, 40]},
+        "pivot_window": {"default": 5, "search": [3, 5, 8]}
+      },
+      "outputs": ["higher_highs_ratio_20", "lower_lows_ratio_20", "bars_since_pivot_high", "bars_since_pivot_low"],
+      "applicability": "confirmed_higher_highs_and_higher_lows_or_lower_highs_and_lower_lows",
+      "invalidation": "close_breaks_last_confirmed_swing",
+      "failure_modes": ["pivot_confirmation_delay"]
+    },
+    {
+      "id": "stochastic_oscillator",
+      "expert": "reversal",
+      "role": "range_momentum_confirmation",
+      "formula_ref": "05b §3.1",
+      "smoothing": "rolling_high_low",
+      "params": {
+        "period": {"default": 14, "search": [7, 14, 21]}
+      },
+      "outputs": ["stoch_k_14"],
+      "applicability": "momentum_extreme_with_price_confirmation",
+      "invalidation": "oscillator_reenters_range_without_price_confirmation",
+      "failure_modes": ["saturation_in_strong_trends"]
+    },
+    {
+      "id": "support_resistance",
+      "expert": "breakout",
+      "role": "breakout_levels_and_shared_context",
+      "formula_ref": "05b §2.1",
+      "smoothing": "confirmed_pivots",
+      "params": {
+        "pivot_window": {"default": 5, "search": [3, 5, 8]},
+        "tolerance": {"default": 0.02, "search": [0.01, 0.02, 0.03]}
+      },
+      "outputs": ["sr_dist_support", "sr_dist_resistance", "sr_strength_support", "sr_strength_resistance"],
+      "applicability": "price_approaches_a_confirmed_zone",
+      "invalidation": "close_returns_inside_or_through_zone",
+      "failure_modes": ["zone_merging_sensitivity", "pivot_confirmation_delay"]
+    },
+    {
+      "id": "donchian",
+      "expert": "breakout",
+      "role": "objective_breakout_trigger",
+      "formula_ref": "05b §2.2",
+      "smoothing": "prior_completed_bars",
+      "params": {
+        "period": {"default": 20, "search": [10, 20, 55]}
+      },
+      "outputs": ["donchian_dist_upper_20", "donchian_dist_lower_20", "donchian_width_20", "breakout_up_20", "breakout_down_20"],
+      "applicability": "daily_close_outside_previous_channel",
+      "invalidation": "close_returns_inside_channel",
+      "failure_modes": ["false_breakouts_in_ranges"]
+    },
+    {
+      "id": "breakout_retest",
+      "expert": "breakout",
+      "role": "breakout_confirmation",
+      "formula_ref": "05b §2.3",
+      "smoothing": "confirmed_daily_close",
+      "params": {
+        "lookback": {"default": 20, "search": [10, 20, 55]},
+        "max_retest_wait": {"default": 8, "search": [6, 8, 10]},
+        "tolerance_atr": {"default": 0.5, "search": [0.25, 0.5, 1.0]}
+      },
+      "outputs": ["retest_up_ok", "retest_down_ok", "retest_failed", "retest_age_bars", "retest_pending"],
+      "applicability": "prior_confirmed_channel_breakout",
+      "invalidation": "close_returns_to_the_pre_breakout_side",
+      "failure_modes": ["no_retest_before_expiry", "retest_tolerance_sensitivity"]
+    },
+    {
+      "id": "rsi",
+      "expert": "reversal",
+      "role": "extension_and_momentum",
+      "formula_ref": "05b §3.1",
+      "smoothing": "wilder_rma",
+      "params": {
+        "period": {"default": 14, "search": [7, 9, 14, 21]},
+        "percentile_window": {"default": 120, "search": [120, 250]}
+      },
+      "outputs": ["rsi_14", "rsi_percentile_120"],
+      "applicability": "extension_confirmed_by_price_or_context",
+      "invalidation": "trend_continues_without_price_confirmation",
+      "failure_modes": ["saturation_in_strong_trends", "lag"]
+    },
+    {
+      "id": "rsi_divergence",
+      "expert": "reversal",
+      "role": "reversal_warning",
+      "formula_ref": "05b §3.3",
+      "smoothing": "confirmed_pivots",
+      "params": {
+        "pivot_window": {"default": 5, "search": [3, 5, 8]},
+        "min_pivot_separation": {"default": 5, "search": [5, 8, 13]},
+        "min_price_change_pct": {"default": 0.005, "search": [0.005, 0.01, 0.02]},
+        "min_oscillator_difference": {"default": 2.0, "search": [1.0, 2.0, 5.0]},
+        "max_age_bars": {"default": 40, "search": [20, 40, 60]}
+      },
+      "outputs": ["rsi_divergence_regular_bullish", "rsi_divergence_regular_bearish", "rsi_divergence_hidden_bullish", "rsi_divergence_hidden_bearish", "rsi_divergence_confirmed", "rsi_divergence_age_bars"],
+      "applicability": "confirmed_price_pivot_with_rsi_disagreement",
+      "invalidation": "price_breaks_the_swing_or_no_follow_through",
+      "failure_modes": ["multiple_divergences_in_trends", "pivot_confirmation_delay"]
+    },
+    {
+      "id": "macd_divergence",
+      "expert": "reversal",
+      "role": "momentum_reversal_warning",
+      "formula_ref": "05b §3.3",
+      "smoothing": "confirmed_pivots",
+      "params": {
+        "pivot_window": {"default": 5, "search": [3, 5, 8]},
+        "min_pivot_separation": {"default": 5, "search": [5, 8, 13]},
+        "min_price_change_pct": {"default": 0.005, "search": [0.005, 0.01, 0.02]},
+        "min_oscillator_difference": {"default": 0.0005, "search": [0.00025, 0.0005, 0.001]},
+        "max_age_bars": {"default": 40, "search": [20, 40, 60]}
+      },
+      "outputs": ["macd_divergence_regular_bullish", "macd_divergence_regular_bearish", "macd_divergence_hidden_bullish", "macd_divergence_hidden_bearish", "macd_divergence_confirmed", "macd_divergence_age_bars"],
+      "applicability": "confirmed_price_pivot_with_macd_disagreement",
+      "invalidation": "price_breaks_the_swing_or_no_follow_through",
+      "failure_modes": ["multiple_divergences_in_trends", "pivot_confirmation_delay"]
+    },
+    {
+      "id": "obv_divergence",
+      "expert": "momentum",
+      "role": "volume_confirmation_warning",
+      "formula_ref": "05b §5.5",
+      "smoothing": "confirmed_pivots",
+      "params": {
+        "pivot_window": {"default": 5, "search": [3, 5, 8]},
+        "min_pivot_separation": {"default": 5, "search": [5, 8, 13]},
+        "min_price_change_pct": {"default": 0.005, "search": [0.005, 0.01, 0.02]},
+        "min_oscillator_difference": {"default": 0.25, "search": [0.1, 0.25, 0.5]},
+        "max_age_bars": {"default": 40, "search": [20, 40, 60]}
+      },
+      "outputs": ["obv_divergence_regular_bullish", "obv_divergence_regular_bearish", "obv_divergence_hidden_bullish", "obv_divergence_hidden_bearish", "obv_divergence_confirmed", "obv_divergence_age_bars"],
+      "applicability": "confirmed_price_pivot_with_obv_disagreement",
+      "invalidation": "price_breaks_the_swing_or_no_follow_through",
+      "failure_modes": ["volume_data_quality", "large_volume_bar_distortion"]
+    },
+    {
+      "id": "bollinger",
+      "expert": "reversal",
+      "role": "volatility_relative_extension",
+      "formula_ref": "05b §3.2",
+      "smoothing": "rolling_mean_and_standard_deviation",
+      "params": {
+        "period": {"default": 20, "search": [10, 20, 30]},
+        "std": {"default": 2.0, "search": [1.5, 2.0, 2.5]},
+        "percentile_window": {"default": 120, "search": [120, 250]}
+      },
+      "outputs": ["bollinger_pctb", "bollinger_bandwidth", "bollinger_bandwidth_percentile_120"],
+      "applicability": "extension_with_regime_and_price_confirmation",
+      "invalidation": "band_walk_or_close_reverses_extension",
+      "failure_modes": ["normal_distribution_assumption", "band_walk_in_trends"]
+    },
+    {
+      "id": "mean_reversion_zscore",
+      "expert": "reversal",
+      "role": "relative_price_extension",
+      "formula_ref": "05b §3.4",
+      "smoothing": "rolling_mean_and_standard_deviation",
+      "params": {
+        "period": {"default": 20, "search": [20, 40, 60]}
+      },
+      "outputs": ["price_zscore_20"],
+      "applicability": "range_regime_and_price_deviation",
+      "invalidation": "structural_break_or_extreme_deviation",
+      "failure_modes": ["non_stationary_price", "trend_continuation"]
+    },
+    {
+      "id": "atr",
+      "expert": "volatility",
+      "role": "range_and_risk_scale",
+      "formula_ref": "05b §0.1",
+      "smoothing": "wilder_rma",
+      "params": {
+        "period": {"default": 14, "search": [5, 10, 14, 21]},
+        "percentile_window": {"default": 120, "search": [120, 250]}
+      },
+      "outputs": ["atr_relative", "atr_percentile_120"],
+      "applicability": "risk_sizing_and_volatility_context",
+      "invalidation": "volatility_regime_changes",
+      "failure_modes": ["reacts_after_volatility_change"]
+    },
+    {
+      "id": "realized_volatility",
+      "expert": "volatility",
+      "role": "volatility_regime_context",
+      "formula_ref": "05b §4.1",
+      "smoothing": "rolling_standard_deviation",
+      "params": {
+        "periods": {"default": [10, 20, 60], "search": [[10, 20, 60], [20, 60, 90]]},
+        "atr_mean_period": {"default": 20, "search": [10, 20, 40]}
+      },
+      "outputs": ["vol_realized_10d", "vol_realized_20d", "vol_realized_60d", "volatility_ratio_20"],
+      "applicability": "magnitude_and_volatility_regime_estimation",
+      "invalidation": "realized_volatility_changes_regime",
+      "failure_modes": ["backward_looking_estimate"]
+    },
+    {
+      "id": "range_compression",
+      "expert": "breakout",
+      "role": "pre_breakout_compression",
+      "formula_ref": "05b §2.3",
+      "smoothing": "rolling_range",
+      "params": {
+        "period": {"default": 20, "search": [10, 20, 40]}
+      },
+      "outputs": ["range_compression_20"],
+      "applicability": "range_contracts_relative_to_recent_maximum",
+      "invalidation": "range_expands_without_breakout_follow_through",
+      "failure_modes": ["compression_has_no_direction"]
+    },
+    {
+      "id": "bollinger_squeeze",
+      "expert": "volatility",
+      "role": "volatility_compression_setup",
+      "formula_ref": "05b §4.2",
+      "smoothing": "rolling_percentile",
+      "params": {
+        "lookback": {"default": 120, "search": [60, 120, 250]}
+      },
+      "outputs": ["bollinger_squeeze", "bollinger_bandwidth_percentile_120"],
+      "applicability": "low_own_history_bandwidth_percentile",
+      "invalidation": "bandwidth_expands_without_directional_confirmation",
+      "failure_modes": ["squeeze_does_not_predict_direction"]
+    },
+    {
+      "id": "keltner",
+      "expert": "volatility",
+      "role": "range_channel_and_squeeze_context",
+      "formula_ref": "05b §4.3",
+      "smoothing": "ema_center_and_wilder_atr",
+      "params": {
+        "ema_period": {"default": 26, "search": [20, 26]},
+        "multiplier": {"default": 1.5, "search": [1.5, 2.0]}
+      },
+      "outputs": ["keltner_upper_dist", "keltner_lower_dist"],
+      "applicability": "range_expansion_and_channel_context",
+      "invalidation": "close_returns_inside_or_crosses_channel",
+      "failure_modes": ["sensitive_to_atr_and_multiplier"]
+    },
+    {
+      "id": "roc",
+      "expert": "momentum",
+      "role": "price_momentum",
+      "formula_ref": "05b §5.1",
+      "smoothing": "calendar_day_difference",
+      "params": {
+        "periods": {"default": [5, 10, 20], "search": [[5, 10, 20], [5, 14, 21, 63]]}
+      },
+      "outputs": ["roc_5", "roc_10", "roc_20"],
+      "applicability": "momentum_and_relative_strength_context",
+      "invalidation": "sustained_opposite_momentum",
+      "failure_modes": ["noisy_at_short_periods"]
+    },
+    {
+      "id": "relative_strength_btc",
+      "expert": "momentum",
+      "role": "cross_asset_relative_momentum",
+      "formula_ref": "05b §5.4",
+      "smoothing": "rolling_log_return_difference",
+      "params": {
+        "period": {"default": 20, "search": [10, 20, 60]}
+      },
+      "outputs": ["relative_strength_btc_20d"],
+      "applicability": "asset_strength_relative_to_btc",
+      "invalidation": "relative_trend_reverses",
+      "failure_modes": ["btc_reference_regime_shift"]
+    },
+    {
+      "id": "volume",
+      "expert": "breakout",
+      "role": "volume_confirmation_and_momentum_context",
+      "formula_ref": "05b §5.5",
+      "smoothing": "rolling_mean_and_zscore",
+      "params": {
+        "rvol_period": {"default": 20, "search": [20, 50]},
+        "obv_zscore_window": {"default": 60, "search": [30, 60, 120]},
+        "percentile_window": {"default": 120, "search": [120, 250]}
+      },
+      "outputs": ["volume_relative_20", "quote_volume_relative_20", "obv_zscore_60", "volume_relative_20_percentile_120"],
+      "applicability": "volume_confirms_or_diverges_from_price_move",
+      "invalidation": "volume_confirmation_fades",
+      "failure_modes": ["exchange_volume_quality", "outlier_volume_bars"]
+    }
+  ]
+}
